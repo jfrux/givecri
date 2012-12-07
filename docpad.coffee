@@ -12,32 +12,26 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://website.com"
-
-			# Here are some old site urls that you would like to redirect from
-			oldUrls: [
-				'www.website.com',
-				'website.herokuapp.com'
-			]
+			url: "http://givecri.jit.su"
 
 			# The default title of our website
-			title: "Your Website"
+			title: "Give to Catalyst Resources International"
 
 			# The website description (for SEO)
 			description: """
-				When your website appears in search results in say Google, the text here will be shown underneath your website's title.
+				Catalyst Resources International 12/12/12 Give Big campaign
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+				cri,donate,give,12,catalyst,resources,international
 				"""
 
 			# The website author's name
-			author: "Your Name"
+			author: "Luke Dooley"
 
 			# The website author's email
-			email: "your@email.com"
+			email: "lukedooley@mac.com"
 
 
 
