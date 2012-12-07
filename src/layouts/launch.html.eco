@@ -3,14 +3,14 @@
 <!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-  <head>
     <meta charset="utf-8" />
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
     <title><%= @getPreparedTitle() %></title>
     <meta name="description" content="<%= @getPreparedDescription() %>" />
     <meta name="keywords" content="<%= @getPreparedKeywords() %>" />
     <meta name="author" content="<%= @site.author or '' %>" />
-
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:900|Mouse+Memoirs' rel='stylesheet' type='text/css'>
+  <link href='/styles/jcountdown.css' rel='stylesheet' type='text/css'>
     <!-- Output DocPad produced meta elements -->
     <%- @getBlock('meta').toHTML() %>
 
@@ -32,7 +32,9 @@
           <div class="span5">
             <div class="brand">
               <h1>
-                <img alt="caelus" src="images/logo.png" />
+                <a href="http://www.catalystresources.net/" target="_blank">
+                <img alt="caelus" src="images/logo_light.png" />
+                </a>
               </h1>
             </div>
           </div>
@@ -43,13 +45,10 @@
                   help us blast off
                 </span>
                 <span class="slabtext">
-                  to new heights
-                </span>
-                <span class="slabtext">
-                  this new year
+                  to new heights 
                 </span>
                 <span class="slabtext slablight">
-                12/12/12
+                 on 12/12/12
                 </span>
               </h2>
               <h2 class="slab subtext">
@@ -63,19 +62,19 @@
             <div class="span7 offset5 tonooffeset">
               <ul class="countdown-unit">
                 <li>
-                  <span class="days">00</span>
+                  <span class="days">25</span>
                   <p class="timeRef">days</p>
                 </li>
                 <li>
-                  <span class="hours">00</span>
+                  <span class="hours">07</span>
                   <p class="timeRef">hours</p>
                 </li>
                 <li>
-                  <span class="minutes">00</span>
+                  <span class="minutes">48</span>
                   <p class="timeRef">minutes</p>
                 </li>
                 <li>
-                  <span class="seconds">00</span>
+                  <span class="seconds">37</span>
                   <p class="timeRef">seconds</p>
                 </li>
               </ul>
@@ -84,32 +83,46 @@
           <div class="row-fluid">
             <div class="span5 hidden-phone"></div>
             <div class="span7">
-              <div class="call_to_action clearfix">
-                <h3 class="span12">Give 12 for 12/12/12!</h3>
-                <a href="#" class="btn btn-success btn-large span12">Donate Now</a>
+              <div class="row-fluid">
+                <div class="span12 call_to_action clearfix">
+                  <h3 class="slab title"><span class="slabtext">
+                    Give $12 for 12/12/12!</span></h3>
+                  <div class="row-fluid">
+                  <a href="https://www.justgive.org/basket?acton=donate&ein=26-3624540&amount=12&designation=Giving%20$12%20for%2012/12/12!" target="_blank" class="span12 js-btn-donate btn btn-success btn-large">Donate Now</a>
+                </div>
+                </div>
               </div>
-              <div class="description">
-                <h3>
-                  So whats this all about?
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-              </div>
-              <!-- add a class to the .signup div when clicking the submit button. Eiher .signup-success or .signup-error -->
-              <div class="signup">
-                <div class="signup-inner">
-                  <form>
-                    <input id="email-signup" placeholder="       Your email" type="email" />
-                    <button class="btn signup-button" type="submit">Submit</button>
-                  </form>
-                  <div class="response">
-                    <p class="email"></p>
-                    <p class="status"></p>
+              <div class="row-fluid">
+                <div class="span12 description">
+                  <h3>
+                    What is this anyway?
+                  </h3>
+                  <p>
+                    The $12 campaign is a way for us to raise some critical funds and get people excited about what is happening in Guatemala.  We have dozens of partners who have committed to finding 12 friends to give $12 on 12/12/12.  Join us. Give now.  Spread the word.
+                  </p>
+                  <div class="row-fluid">
+                      <a href="#mission" style="font-weight:bold;" class="btn btn-info btn-large span12">Learn More</a>
                   </div>
+                  <h3>
+                    Watch Our Video
+                  </h3>
+                  <p>
+                    <iframe class="span12" height="263" src="http://www.youtube.com/embed/SQai7T4Y0qs" frameborder="0" allowfullscreen></iframe>
+                  </p>
+
+                  <h3>
+                    <a name="mission"></a>Our Mission
+                  </h3>
+                  <p>
+                    Catalyst Resources International exists as an advocate for the children of Guatemala and serves as a catalyst connecting resources to the needy in order to clothe the naked, take food to the hungry, and give water to those who are thirsty. CRI's desire is to see the children they serve in Guatemala become responsible, educated, and fulfilled Christian adults. Click here to visit the forms page and read our ministry overview document and others.
+                  </p>
+
+                  <h3>
+                    Who We Are
+                  </h3>
+                  <p>
+                    Catalyst Resources International was founded by Fontaine and Paula Greene in 2008. CRI is a registered 501 (c)(3) organization that seeks to partner with Guatemalan pastors and other Christian organizations in an effort to meet the physical and spiritual needs of the people. CRI hosts work teams and families that come to minister in Guatemala. The scope of the work done through CRI is to build houses and churches, establish feeding programs, conduct VBS, support medical and dental clinics, and provide chicken coops for needy families. We have found that meeting these physical needs has opened doors to share the Gospel of Jesus Christ. CRI then directs the people they serve to a local church and partners with the local pastor to continue meeting the needs of the people. Through partnership and shared resources, CRI strives to be good stewards of all that God has entrusted to them
+                  </p>
                 </div>
               </div>
             </div>
@@ -119,28 +132,8 @@
             <div class="span7">
               <ul class="list-social">
                 <li class="link-facebook">
-                  <a href="#">
+                  <a href="https://www.facebook.com/catalystresourcesinternational" target="_blank">
                     facebook
-                  </a>
-                </li>
-                <li class="link-google">
-                  <a href="#">
-                    google
-                  </a>
-                </li>
-                <li class="link-twitter">
-                  <a href="#">
-                    twitter
-                  </a>
-                </li>
-                <li class="link-linkedin">
-                  <a href="#">
-                    linkedin
-                  </a>
-                </li>
-                <li class="link-pinterest">
-                  <a href="#">
-                    pinterest
                   </a>
                 </li>
               </ul>
@@ -155,7 +148,7 @@
       <div class="bg-5"></div>
       <div class="bg-6"></div>
     </div>
-  </body>
+
   <script src="/vendor/jquery.js" type="text/javascript"></script>
   <script src="/vendor/twitter-bootstrap/js/bootstrap.js" type="text/javascript"></script>
   <script src="/vendor/jquery.slabtext.min.js" type="text/javascript"></script>
@@ -176,4 +169,5 @@
   })();
 
 </script>
-</head>
+  </body>
+</html>

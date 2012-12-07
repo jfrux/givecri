@@ -9,7 +9,7 @@
 /* GENERAL LAYOUT RULES */
 /* -------------------- */
 body {
-  background: #241b37 url(../images/space-bg.jpg) top center repeat-x;
+  background: #205d68 url(../images/space-bg.jpg) top center repeat-x;
   color: #ebd9b3;
   text-shadow: 1px 1px 0px #0c0935;
 }
@@ -61,8 +61,15 @@ p {
   background: none;
 }
 
-.call_to_action > h3 {
+.js-btn-donate {
+  font-weight:bold;
+}
 
+.call_to_action {
+  position:relative;
+  >h3 {
+    font-family: 'Mouse Memoirs',sans-serif !important;
+  }
 }
 .description > h3 {
     margin-top:20px;
@@ -70,7 +77,7 @@ p {
 
 @media (max-width: 480px) {
   .countdown-unit {
-    height:36px!important;
+    height:44px!important;
   }
 }
 /* COUNTDOWN TIMER */
@@ -111,6 +118,22 @@ p {
 .theme-sepia .countdown-unit li p {
   color: #221c1a;
   text-shadow: 1px 1px 0px #ede9e3;
+}
+
+.cntSeparator {
+  font-size: 54px;
+  margin: 10px 7px;
+  color: #000;
+}
+.desc { margin: 7px 3px; }
+.desc div {
+  float: left;
+  font-family: Arial;
+  width: 70px;
+  margin-right: 65px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
 }
 
 /* SIGNUP FORM */
@@ -512,32 +535,55 @@ p {
     background: url(../images/sepia-astronaut.png) no-repeat;
   }
 }
-/* CSS3 ANIMATIONS */
-/* --------------- */
-@-moz-keyframes pulse {
-  0% {
-    -moz-transform: scale(1);
-  }
 
-  50% {
-    -moz-transform: scale(1.2);
-  }
+.flip-counter ul.cd{float:left;list-style-type:none;margin:0;padding:0}
+.flip-counter li{background:url(../images/digits.png) 0 0 no-repeat}
+.flip-counter li.t{background-position:0 0;width:53px;height:39px}
+.flip-counter li.b{background-position:0 0;width:53px;height:64px}
+.flip-counter li.s{background-position:-53px -1030px;width:14px;height:103px}
+.flip-counter li.money{background-position:-1px -1030px;width:53px;height:103px}
 
-  100% {
-    -moz-transform: scale(1);
-  }
+.cntSeparator {
+  font-size: 54px;
+  margin: 10px 7px;
+  color: #000;
 }
-
-@-webkit-keyframes "pulse" {
-  0% {
-    -webkit-transform: scale(1);
-  }
-
-  50% {
-    -webkit-transform: scale(1.2);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-  }
+.desc { margin: 7px 3px; }
+.desc div {
+  float: left;
+  font-family: Arial;
+  width: 70px;
+  margin-right: 65px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
 }
+// /* CSS3 ANIMATIONS */
+// /* --------------- */
+// @-moz-keyframes pulse {
+//   0% {
+//     -moz-transform: scale(1);
+//   }
+
+//   50% {
+//     -moz-transform: scale(1.2);
+//   }
+
+//   100% {
+//     -moz-transform: scale(1);
+//   }
+// }
+
+// @-webkit-keyframes "pulse" {
+//   0% {
+//     -webkit-transform: scale(1);
+//   }
+
+//   50% {
+//     -webkit-transform: scale(1.2);
+//   }
+
+//   100% {
+//     -webkit-transform: scale(1);
+//   }
+// }

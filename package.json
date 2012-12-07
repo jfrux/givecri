@@ -1,6 +1,6 @@
 {
 	"name": "givecri",
-	"version": "0.0.1-4",
+	"version": "0.0.1-9",
 	"description": "a giving portal landing page for catalyst resources international.",
 	"author": "Joshua F. Rountree <joshua@swodev.com>",
 	"contributors": [
@@ -22,7 +22,11 @@
 		"docpad-plugin-less": "2.x",
 		"docpad-plugin-marked": "2.x",
 		"docpad-plugin-partials": "2.x",
-		"docpad-plugin-text": "2.x"
+		"docpad-plugin-text": "2.x",
+		"express": "3.x.x",
+		"async": "latest",
+		"mongoose": "3.4.x",
+		"underscore": "latest"
 	},
 	"devDependencies": {
 		"docpad-plugin-livereload": "2.x"

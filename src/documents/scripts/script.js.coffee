@@ -1,4 +1,3 @@
-
 # change the date of your countdown here
 # year to countdown to
 
@@ -60,68 +59,12 @@ hideIphoneBar = ->
       setTimeout (->
         window.scrollTo 0, 0
       ), 0
-
-setupSwitcher = ->
-  $("body").delegate ".switch-option", "change", ->
-    $($(this).data("option")).toggle @checked
-
-  $("body").delegate ".theme-option", "click", ->
-    switch $(this).data("option")
-      when "sepia"
-        $("body").addClass("theme-sepia").find(".brand").find("img").attr "src", "images/sepia-logo.png"
-      when "color"
-        $("body").removeClass("theme-sepia").find(".brand").find("img").attr "src", "images/logo.png"
-      when "bazar"
-        $("body").removeClass("fonts-set2").addClass "fonts-set1"
-        slabTextHeadlines()
-      when "sonsie"
-        $("body").removeClass("fonts-set1").addClass "fonts-set2"
-        slabTextHeadlines()
-
-setupSignupForm = ->
-  mainDiv = $(".signup")
-  $(".signup-button").click ->
-    email = $("#email-signup").val()
-    
-    # validate email here
-    request = $.ajax(
-      url: "sign_me_up.php"
-      context: this
-      type: "POST"
-      dataType: "JSON"
-      data:
-        email: email
-    )
-    request.done (data) ->
-      if data.error is `undefined`
-        mainDiv.find(".response .email").text data.email
-        mainDiv.find(".response .status").text "Registered"
-        mainDiv.addClass "signup-active signup-success"
-      else
-        mainDiv.find(".response .email").text data.email
-        mainDiv.find(".response .status").text data.error
-        mainDiv.addClass "signup-active signup-error"
-        setTimeout (->
-          mainDiv.removeClass "signup-active signup-error"
-        ), 3000
-
-    false
-
   
   # fix placeholders for ie8, ie9
   $(".ie8, .ie9").find("input").placeholder()
-getSwitcherContent = ->
-  switcher = $(".switcher-container")
-  switcher.find(":checkbox").each ->
-    checkbox = $(this)
-    elementVisible = $(checkbox.data("option")).is(":visible")
-    unless elementVisible
-      checkbox.removeAttr "checked"
-    else
-      checkbox.attr "checked", "checked"
 
-  switcher.html()
 $ ->
+ 
   countdownYear = 2012
   countdownMonth = 12
   countdownHour = 12
@@ -134,8 +77,8 @@ $ ->
     html: true
     content: getSwitcherContent
 
-  setupSwitcher()
-  setupSignupForm()
+  #setupSwitcher()
+  #setupSignupForm()
 
 $(window).load ->
   slabTextHeadlines()
