@@ -67,7 +67,7 @@ $ ->
  
   countdownYear = 2012
   countdownMonth = 12
-  countdownHour = 12
+  countdownHour = 13
   countdownDate = new Date(countdownYear, countdownMonth - 1, countdownHour)
   setupCountdownTimer countdownDate
   spaceParallax()
